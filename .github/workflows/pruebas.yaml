@@ -1,0 +1,15 @@
+name: Cypress
+on:
+  push:
+    branches: [ master ]
+jobs:
+  job1:
+    name: Deploy and Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout de repositorio
+      uses: actions/checkout@v2
+    - name: Cypress.io
+      uses: cypress-io/github-action@v2.9.7
+      with:
+          start: npm start
