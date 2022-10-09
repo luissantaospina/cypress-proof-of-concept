@@ -4,12 +4,16 @@ on:
     branches: [ master ]
 jobs:
   job1:
-    name: Deploy and Test
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
     - name: Checkout de repositorio
       uses: actions/checkout@v2
-    - name: Cypress.io
-      uses: cypress-io/github-action@v4.2.0
-      with:
-          start: npm run test
+  job2:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cypress.io
+          uses: cypress-io/github-action@v4.2.0
+          with:
+            start: npm run test
