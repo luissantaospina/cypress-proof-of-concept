@@ -1,0 +1,17 @@
+{
+  "name": "cypress-proof-of-concept",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open --browser chrome --e2e"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Luis Santa",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  }
+}
