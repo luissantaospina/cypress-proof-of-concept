@@ -1,8 +1,6 @@
-describe('Home Capital App', () => {
-    beforeEach(() => {
-        cy.visit('https://staging.homecapital.com.co/')
-    })
+describe('Home Capital App - Estates', () => {
     it('frontpage can be open', () => {
+        cy.visit('https://staging.homecapital.com.co/')
         cy.contains('OUTLET')
     })
     it('search estates', () => {
