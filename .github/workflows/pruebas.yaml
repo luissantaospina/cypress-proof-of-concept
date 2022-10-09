@@ -10,6 +10,6 @@ jobs:
     - name: Checkout de repositorio
       uses: actions/checkout@v2
     - name: Cypress.io
-      uses: cypress-io/github-action@v2.9.7
+      uses: cypress-io/github-action@v4.2.0
       with:
           start: npm run test
