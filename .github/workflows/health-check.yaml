@@ -1,4 +1,4 @@
-name: Cypress
+name: Health Check
 on:
   schedule:
     - cron: "H/10 * * * *"
