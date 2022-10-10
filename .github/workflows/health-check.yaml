@@ -1,10 +1,10 @@
 name: Health Check
 on:
   schedule:
-    - cron: "H/10 * * * *"
+    - cron: "10 * * * *"
 jobs:
   job1:
-    name: Deploy and Test
+    name: Test
     runs-on: ubuntu-latest
     steps:
     - name: Checkout de repositorio
