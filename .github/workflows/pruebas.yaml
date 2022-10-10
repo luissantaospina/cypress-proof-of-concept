@@ -5,7 +5,11 @@ on:
 jobs:
   job1:
     name: Deploy and Test
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['8', '10', '12']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
     - name: Checkout de repositorio
       uses: actions/checkout@v2
