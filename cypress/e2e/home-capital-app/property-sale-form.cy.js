@@ -16,6 +16,7 @@ describe('Home Capital App - Sale', () => {
         cy.get('[id="purchase-case-start-request-offer-survey--address-generator-road"]').type('58')
         cy.get('[id="purchase-case-start-request-offer-survey--address-generator-road-number"]').type('51')
         cy.get('[id="purchase-case-start-request-offer-survey--next"]').click()
+
     })
     it('start property sale form step 2', () => {
         cy.contains('Cra. 59b #51-58, Bello, Antioquia, Colombia')
